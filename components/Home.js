@@ -44,7 +44,7 @@ function Home() {
   // ];
 
   useEffect(() => {
-    fetch('http://localhost:3000/movies')
+    fetch('https://my-movies-backend-zeta.vercel.app/movies')
       .then(res => res.json())
       .then(data => {
         setMoviesData(data.movies);
